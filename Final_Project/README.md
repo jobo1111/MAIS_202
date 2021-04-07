@@ -8,7 +8,8 @@ Training data retrieved from [Kaggle](https://www.kaggle.com/c/birdsong-recognit
 
 This Bird Call Classifier project is a web app that classifies bird calls from an 
 uploaded mp3 file. I built this model using Sci-kit Learn and built the web app using
-Flask. I used Sci-kit's PCA and SVM methods to classify the bird calls from the data 
+Flask. I utilized Librosa's library to convert each mp3 file into a spectrogram then
+passed them to Sci-kit's PCA and SVM methods to classify the bird calls from the data 
 retrieved from Kaggle. 
 
 ## Running the app
