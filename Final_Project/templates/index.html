@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <link rel="stylesheet" type="text/css" href="/static/css/main.css">
+   <script src="/static/js/main.js"></script>
+</head>
+
+<body>
+
+   
+   <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'bird')" id="defaultOpen">Bird Call</button>
+   </div>
+   
+
+   <!-- Tab for Bird Call classification -->
+   <div id="bird" class="tabcontent">
+      <h1 class="title"> BIRD CALL FLASK APP DEMO </h1>
+
+      <form id="form" method="POST" enctype="multipart/form-data">
+
+         <input type="hidden" name="predictor" value="bird">
+
+         {% if prediction != None %}
+         <!-- Show prediction results. -->
+         <p> That bird call is from a  {{ prediction }} </p>
+         {% endif %}
+
+         <!-- Show upload button for follow up predictions. -->
+         <label for="file-upload" class="center custom-button">
+            upload a bird call
+            <input type="file" id="file-upload" name="file" onchange=submit() />
+         </label>
+      </form>
+   </div>
+
+
+   
+   
+
+   <script>
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+   </script>
+
+
+   <img src="https://www.allaboutbirds.org/guide/assets/photo/306710541-1280px.jpg" alt="American Goldfinch" width="460" height="300" >
+   <img src="https://www.allaboutbirds.org/guide/assets/photo/311635911-1280px.jpg" alt="Blue Jay" width = 460 height="300">
+   <img src="https://www.allaboutbirds.org/guide/assets/photo/306380871-1280px.jpg" alt="Baltimore Oriole" width = 460 height="300">
+   <img src="https://www.allaboutbirds.org/guide/assets/photo/303891031-1280px.jpg" alt="Anna's Hummingbird" width = 460 height="300">
+   <img src="https://www.allaboutbirds.org/guide/assets/photo/302052391-1280px.jpg" alt="Ash-throated FlyCatcher" width = 460 height="300">
+   <img src="https://www.allaboutbirds.org/guide/assets/photo/302472691-1280px.jpg" alt="Black Capped Chickadee" width = 460 height="300">
+
+</body>
+
+</html>
