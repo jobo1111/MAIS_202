@@ -2,7 +2,7 @@
 
 Final project for McGill AI Society Intro to ML Bootcamp (Winter 2021).
 
-Training data retrieved from Kaggle.
+Training data retrieved from [Kaggle](https://www.kaggle.com/c/birdsong-recognition/data).
 
 ## Project Description
 
@@ -33,7 +33,6 @@ Then open a browser and go to [http://localhost:5000](http://localhost:5000)
 │   ├── y.npy                   # Contains the corresponding labels
 │   └── results
 │       └── clf.pkl             # Contains the pretrained classifier
-│
 ├── requirements.txt            # File containing packages needed to run the code
 ├── static
 │   ├── css
