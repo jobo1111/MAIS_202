@@ -18,7 +18,7 @@ warnings.filterwarnings("ignore")
 
 
 # create paths to csv and mp3 files
-PATH = "D:\Mais_Deliverable"
+PATH = "."
 TRAIN = PATH + "/train_audio"
 
 # list of bird species to learn
@@ -165,7 +165,7 @@ if __name__ == "__main__":
   # flatten the images
   #fix_shape(data)
   
-  cre_train(data)
+  #cre_train(data)
   train()
 
 
