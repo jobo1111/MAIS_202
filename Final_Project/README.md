@@ -13,7 +13,8 @@ passed them to Sci-kit's PCA and SVM methods to classify the bird calls from the
 retrieved from Kaggle. 
 
 ## Running the app
-To run the app, install all the packages in requirements.txt. Then change to the main directory ​
+To run the app, install all the packages in requirements.txt. Then move to the model directory and 
+download the [data](https://www.kaggle.com/c/birdsong-recognition/data). Then change to the main directory ​
 and run the following code
 ```bash
 python ./model/model.py
